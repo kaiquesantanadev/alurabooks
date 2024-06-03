@@ -11,7 +11,6 @@
 }
 
 .contato__titulo {
-    text-align: center;
     font-size: 18px;
     font-weight: 500;
 }
@@ -34,4 +33,25 @@
     font-family: var(--fonte-principal);
     color: var(--azul);
     background: url("../img/Email.svg") no-repeat;
+}
+
+@media screen and (min-width: 1024px) {
+    .contato {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contato__titulo {
+        font-size: 24px;
+        width: 70%;
+    }
+
+    .contato__descricao {
+        margin-right: 1em;
+    }
+
+    .contato__email {
+        width: 30%;
+    }
 }
