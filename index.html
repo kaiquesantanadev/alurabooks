@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
     <title>AluraBooks</title>
 </head>
@@ -44,7 +45,52 @@
 
     <section class="carrossel">
         <h2 class="carrossel__titulo">Novos lançamentos</h2>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="img/ApacheKafka.svg" alt="Imagem da capa do livro Apache Kafka">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/Liderança.svg" alt="Imagem da capa do livro sobre Liderança">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/Javascript.svg" alt="Imagem da capa do livro sobre JavaScript">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/Guia Front-end.svg" alt="Imagem da capa do livro sobre FrontEnd">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/Portugol.svg" alt="Imagem da capa do livro sobre Portugol">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/Acessibilidade.svg" alt="Imagem da capa do livro sobre Acessibilidade">
+                </div>
+            
+            </div>
+
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        
+
     </section>
     
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/carrossel.js"></script>
 </body>
 </html>
